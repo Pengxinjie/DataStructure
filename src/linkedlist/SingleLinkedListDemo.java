@@ -219,6 +219,4 @@ class SingleLinkedList{
     2.从头到为遍历原来的链表，每遍历一个节点，就将其取出，并放在新的链表的最前端
     3.原来的链表的head.next=reverseHead.next
      */
-
-
 }

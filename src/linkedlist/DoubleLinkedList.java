@@ -1,19 +1,17 @@
 package linkedlist;
-
 import org.junit.Test;
-
 import java.util.Stack;
 
 /**
  * @author Pengxinjie
- * @DATE 2020/3/5 - 13:05
+ * @DATE 2020/3/5 - 19:42
  */
-public class studetList {
+public class DoubleLinkedList {
     public static void main(String[] args) {
         DoubLinkedList s = new DoubLinkedList();
-        _Student s1 = new _Student("彭鑫杰",19);
-        _Student s2 = new _Student("彭鑫",18);
-        _Student s3 = new _Student("彭",17);
+        _Student s1 = new _Student("彭鑫杰",20);
+        _Student s2 = new _Student("内马尔",19);
+        _Student s3 = new _Student("C罗",21);
 
         //测试
 
@@ -47,18 +45,18 @@ public class studetList {
     public void test_1(){
         DoubLinkedList studentLinkedList = new DoubLinkedList();
         _Student s1 = new _Student("彭鑫杰",20);
-        _Student s2 = new _Student("彭鑫",19);
-        _Student s6 = new _Student("彭鑫",19);
-        _Student s3 = new _Student("彭",21);
-        _Student s4 = new _Student("杰",18);
-        _Student s5 = new _Student("杰",18);
+        _Student s2 = new _Student("内马尔",19);
+        _Student s3 = new _Student("C罗",21);
+        _Student s4 = new _Student("郜林",18);
+        _Student s5 = new _Student("郑智",18);
+        _Student s6 = new _Student("梅西",19);
 
-        studentLinkedList.addValuePlus(s1);
-        studentLinkedList.addValuePlus(s3);
-        studentLinkedList.addValuePlus(s6);
-        studentLinkedList.addValuePlus(s5);
-        studentLinkedList.addValuePlus(s2);
-        studentLinkedList.addValuePlus(s4);
+        studentLinkedList.addValueTail(s1);
+        studentLinkedList.addValueTail(s3);
+        studentLinkedList.addValueTail(s6);
+        studentLinkedList.addValueTail(s5);
+        studentLinkedList.addValueTail(s2);
+        studentLinkedList.addValueTail(s4);
 
         System.out.println(studentLinkedList.FindLastIndexNode(studentLinkedList.getHeadNode(),6).toString());
     }
@@ -67,11 +65,11 @@ public class studetList {
     public void test(){
         DoubLinkedList s = new DoubLinkedList();
         _Student s1 = new _Student("彭鑫杰",20);
-        _Student s2 = new _Student("彭鑫",19);
-        _Student s6 = new _Student("彭鑫",19);
-        _Student s3 = new _Student("彭",21);
-        _Student s4 = new _Student("杰",18);
-        _Student s5 = new _Student("杰",18);
+        _Student s2 = new _Student("内马尔",19);
+        _Student s3 = new _Student("C罗",21);
+        _Student s4 = new _Student("郜林",18);
+        _Student s5 = new _Student("郑智",18);
+        _Student s6 = new _Student("梅西",19);
 
         s.addValuePlus(s1);
         s.addValuePlus(s3);
@@ -97,11 +95,12 @@ public class studetList {
     }
 }
 
-class Student {
+class _Student {
     private String name;
     private int age;
     public _Student headNode;
     public _Student next;
+    public _Student pre;
 
     public int getAge() {
         return age;
@@ -119,12 +118,12 @@ class Student {
         this.name = name;
     }
 
-    public Student(String name, int age) {
+    public _Student(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public Student() {
+    public _Student() {
         //无参构造
     }
 
@@ -137,7 +136,7 @@ class Student {
     }
 }
 
-class StudentLinkedList{
+class DoubLinkedList {
     /**1.初始化头结点
      */
     _Student headNode = new _Student("",0);
@@ -161,7 +160,9 @@ class StudentLinkedList{
         while (temp.next != null){
             temp = temp.next;
         }
+        //连接
         temp.next = student;
+        student.pre = temp;
     }
 
     /**
@@ -170,10 +171,13 @@ class StudentLinkedList{
     public void addValueHead(_Student student){
         if (headNode.next == null){
             headNode.next = student;
+            student.pre = headNode;
             return;
         }
         student.next = headNode.next;
+        headNode.next.pre = student;
         headNode.next = student;
+        student.pre = headNode;
     }
 
     /**
@@ -196,7 +200,9 @@ class StudentLinkedList{
 
         _Student temp = getIndex(index-1);
         student.next = temp.next;
+        temp.next.pre = student;
         temp.next = student;
+        student.pre = temp;
     }
 
     /**
@@ -207,6 +213,7 @@ class StudentLinkedList{
         _Student temp = headNode;
         if(headNode.next == null){
             headNode.next = student;
+            student.pre = headNode;
             return;
         }
         while (student.getAge() > temp.next.getAge()){
@@ -217,10 +224,13 @@ class StudentLinkedList{
         }
         if(temp.next == null){
             temp.next = student;
+            student.pre = temp;
             return;
         }
         student.next = temp.next;
+        temp.next.pre = student;
         temp.next = student;
+        student.pre = temp;
     }
 
     /**
@@ -284,19 +294,18 @@ class StudentLinkedList{
             System.out.println("无效的位置！");
             return;
         }
-        //如果没有前一个位置
-        if (index == 1) {
-            headNode.next = headNode.next.next;
+
+        //如果是最后一个位置
+        if(index == getLength()){
+            _Student temp = getIndex(index);
+            temp.pre.next = null;
+            temp.pre = null;
             return;
         }
-        //寻找index的前一个元素
-        _Student temp = getIndex(index-1);
-        if (temp.next.next != null) {
-            //删除index
-            temp.next = temp.next.next;
-        }else {
-            temp.next = null;
-        }
+        //寻找index
+        _Student temp = getIndex(index);
+        temp.pre.next = temp.next;
+        temp.next.pre = temp.pre;
     }
 
     /**
@@ -352,10 +361,10 @@ class StudentLinkedList{
     }
     //面试题：查找单链表的倒数第k个结点
     /**思路：
-    1.编写一个方法接收头结点和index（index表示倒数index个结点）
-    2.遍历链表得到链表的总长度size
-    3.从链表的第一个开始遍历（size-index）个，便得到所需结点
-    4.若找到返回该结点，没找到返回null
+     1.编写一个方法接收头结点和index（index表示倒数index个结点）
+     2.遍历链表得到链表的总长度size
+     3.从链表的第一个开始遍历（size-index）个，便得到所需结点
+     4.若找到返回该结点，没找到返回null
      */
     public _Student FindLastIndexNode(_Student student, int index){
         //判空
