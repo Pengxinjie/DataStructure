@@ -1,10 +1,12 @@
-package Array;
+package array;
 
 import java.util.Scanner;
 
 /**
  * @author Pengxinjie
  * @DATE 2020/2/4 - 18:11
+ *
+ * 环形队列
  */
 public class CircleArrayQueue {
     public static void main(String[] args) {
@@ -57,9 +59,9 @@ public class CircleArrayQueue {
     }
 }
 
-//使用数组模拟队列-编写一个ArrayQueue类
+//使用数组模拟队列
 class CircleArray {
-    private int maxSize;
+    private int maxSize;//最大容量
     private int front;//队首
     private int rear;//队尾
     private int []arr;//模拟队列

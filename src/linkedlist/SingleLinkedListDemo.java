@@ -1,4 +1,4 @@
-package LinkedList;
+package linkedlist;
 /**
  * @author Pengxinjie
  * @DATE 2020/2/5 - 14:56

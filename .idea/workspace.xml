@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6769ac20-63a3-4ee8-82c8-2bb66ab8050e" name="默认更改列表" comment="" />
+    <list default="true" id="6769ac20-63a3-4ee8-82c8-2bb66ab8050e" name="默认更改列表" comment="数组、链表">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/CircleRemoveArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedlist/_List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stringmatch/KMPAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stringmatch/ViolenceMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/ArrayQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/ArrayQueueDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/CircleArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/CircleArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/SpraseArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SpraseArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/SingleLinkedListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/SingleLinkedListDemo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,14 +26,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1YD7uEsairvYtPZZwtRAt58n4ST" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,28 +49,96 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asus\IdeaProjects\DataStructure\src" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+  <component name="RunManager" selected="Application.studetList">
+    <configuration name="ArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.ArrayQueueDemo" />
       <module name="DataStructure" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KMPAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stringmatch.KMPAlgorithm" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stringmatch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_List" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedlist._List" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="studetList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedlist.studetList" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KMPAlgorithm.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stringmatch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stringmatch" />
+      <option name="MAIN_CLASS_NAME" value="stringmatch.KMPAlgorithm" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.studetList" />
+        <item itemvalue="Application._List" />
+        <item itemvalue="Application.ArrayQueueDemo" />
+        <item itemvalue="JUnit.KMPAlgorithm.test" />
+        <item itemvalue="Application.KMPAlgorithm" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -74,37 +163,114 @@
       <option name="presentableId" value="Default" />
       <updated>1582465531358</updated>
       <workItem from="1582465535880" duration="622000" />
-      <workItem from="1582466665986" duration="362000" />
+      <workItem from="1582466665986" duration="1468000" />
+      <workItem from="1582508403494" duration="8000" />
+      <workItem from="1582597095595" duration="730000" />
+      <workItem from="1582616433230" duration="7480000" />
+      <workItem from="1582774780420" duration="659000" />
+      <workItem from="1582873670270" duration="157000" />
+      <workItem from="1582873842445" duration="184000" />
+      <workItem from="1582874040897" duration="1238000" />
+      <workItem from="1583299281087" duration="1349000" />
+      <workItem from="1583377579918" duration="10640000" />
     </task>
+    <task id="LOCAL-00001" summary="数组、链表">
+      <created>1582467290405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582467290405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="数组、链表" />
+    <option name="LAST_COMMIT_MESSAGE" value="数组、链表" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="398" y="230" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582467129772">
+    <state x="445" y="76" key="#com.intellij.ide.util.MemberChooser" timestamp="1583389354707">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="398" y="230" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1582467129772" />
-    <state x="420" y="101" key="FileChooserDialogImpl" timestamp="1582465793488">
+    <state x="445" y="76" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1583389354707" />
+    <state x="282" y="34" key="#toString()_Generation_Settings" timestamp="1583385076126">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="420" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1582465793488" />
+    <state x="282" y="34" key="#toString()_Generation_Settings/0.0.1280.720@0.0.1280.720" timestamp="1583385076126" />
+    <state x="398" y="184" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1583387386824">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="398" y="184" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1583387386824" />
+    <state x="242" y="0" key="CommitChangelistDialog2" timestamp="1582467310204">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="242" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1582467310204" />
+    <state x="420" y="101" key="FileChooserDialogImpl" timestamp="1583387013853">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="420" y="101" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583387013853" />
     <state x="464" y="256" width="377" height="208" key="Github.CreateGistDialog" timestamp="1582467149847">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="464" y="256" width="377" height="208" key="Github.CreateGistDialog/0.0.1280.720@0.0.1280.720" timestamp="1582467149847" />
-    <state x="141" y="2" key="SettingsEditor" timestamp="1582466113621">
+    <state width="1235" height="288" key="GridCell.Tab.0.bottom" timestamp="1583389462657">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="141" y="2" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1582466113621" />
+    <state width="1235" height="288" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1583389462657" />
+    <state width="1235" height="288" key="GridCell.Tab.0.center" timestamp="1583389462657">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1235" height="288" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1583389462657" />
+    <state width="1235" height="288" key="GridCell.Tab.0.left" timestamp="1583389462657">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1235" height="288" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1583389462657" />
+    <state width="1235" height="288" key="GridCell.Tab.0.right" timestamp="1583389462657">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1235" height="288" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1583389462657" />
+    <state width="1235" height="189" key="GridCell.Tab.1.bottom" timestamp="1582621605574">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1235" height="189" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582621605574" />
+    <state width="1235" height="189" key="GridCell.Tab.1.center" timestamp="1582621605574">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1235" height="189" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1582621605574" />
+    <state width="1235" height="189" key="GridCell.Tab.1.left" timestamp="1582621605574">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1235" height="189" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1582621605574" />
+    <state width="1235" height="189" key="GridCell.Tab.1.right" timestamp="1582621605574">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1235" height="189" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1582621605574" />
+    <state x="123" y="0" key="SettingsEditor" timestamp="1582875726077">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="123" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1582875726077" />
+    <state x="232" y="93" key="Vcs.Push.Dialog.v2" timestamp="1582467430479">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="232" y="93" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1582467430479" />
     <state x="348" y="254" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582466927241">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="348" y="254" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.720@0.0.1280.720" timestamp="1582466927241" />
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1582465846934">
+    <state x="436" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583378999874">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1582465846934" />
+    <state x="436" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1583378999874" />
+    <state x="27" y="0" key="new project wizard" timestamp="1582875801773">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="27" y="0" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1582875801773" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1583385861006">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1583385861006" />
   </component>
 </project>

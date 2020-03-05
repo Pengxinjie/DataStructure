@@ -1,4 +1,4 @@
-package Array;
+package array;
 /**
  * @author Pengxinjie
  * @DATE 2020/2/3 - 20:49
@@ -22,8 +22,9 @@ public class SpraseArray {
         int sum=0;
         for (int[] x : chessArr1) {
             for (int i : x) {
-                if(i!=0)
+                if(i!=0) {
                     sum++;
+                }
             }
         }
         //2.创建稀疏数组

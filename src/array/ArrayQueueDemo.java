@@ -1,17 +1,15 @@
-package Array;
-
-import Array.CircleArray;
-
+package array;
 import java.util.Scanner;
-
 /**
  * @author Pengxinjie
  * @DATE 2020/2/4 - 16:05
+ *
+ * 队列数组实现
  */
 public class ArrayQueueDemo {
     public static void main(String[] args) {
         //测试
-        CircleArray queueDemo=new CircleArray(3);
+        ArrayQueue queueDemo=new ArrayQueue(3);
         char key=' ';//接收用户输入
         Scanner sc=new Scanner(System.in);
         boolean loop=true;
@@ -104,8 +102,8 @@ class ArrayQueue{
             System.out.println("队列为空！");
             return;
         }
-        for (int i : arr) {
-            System.out.println(i);
+        for (int i = front+1; i <= rear; i++) {
+            System.out.println(arr[i]);
         }
     }
     //显示队列的头数据
