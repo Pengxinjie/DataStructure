@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6769ac20-63a3-4ee8-82c8-2bb66ab8050e" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stack/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/ListStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/PolandNotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/recursion/EightQueen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/recursion/MiGong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/Exchange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,20 +54,7 @@
       <recent name="C:\Users\asus\IdeaProjects\DataStructure\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PolandNotation">
-    <configuration name="ArrayStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.ArrayStack" />
-      <module name="DataStructure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.EightQueen">
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack.Calculator" />
       <module name="DataStructure" />
@@ -82,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Josepfu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedlist.Josepfu" />
+    <configuration name="EightQueen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursion.EightQueen" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="linkedlist.*" />
+          <option name="PATTERN" value="recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +81,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.ListStack" />
+    <configuration name="Exchange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Exchange" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiGong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursion.MiGong" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EightQueen" />
+        <item itemvalue="Application.MiGong" />
+        <item itemvalue="Application.Exchange" />
         <item itemvalue="Application.PolandNotation" />
         <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.ListStack" />
-        <item itemvalue="Application.ArrayStack" />
-        <item itemvalue="Application.Josepfu" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +164,7 @@
       <workItem from="1583299281087" duration="1349000" />
       <workItem from="1583377579918" duration="14898000" />
       <workItem from="1583395444338" duration="12504000" />
-      <workItem from="1583469771932" duration="20400000" />
+      <workItem from="1583469771932" duration="34192000" />
     </task>
     <task id="LOCAL-00001" summary="数组、链表">
       <created>1582467290405</created>
@@ -188,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583416732351</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="栈">
+      <created>1583494681657</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583494681657</updated>
+    </task>
+    <task id="LOCAL-00005" summary="栈">
+      <created>1583494869470</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583494869470</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +211,8 @@
     <MESSAGE value="数组、链表" />
     <MESSAGE value="链表" />
     <MESSAGE value="单向循环链表" />
-    <option name="LAST_COMMIT_MESSAGE" value="单向循环链表" />
+    <MESSAGE value="栈" />
+    <option name="LAST_COMMIT_MESSAGE" value="栈" />
   </component>
   <component name="WindowStateProjectService">
     <state x="445" y="76" key="#com.intellij.ide.util.MemberChooser" timestamp="1583476405856">
@@ -217,10 +231,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="398" y="184" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1583387386824" />
-    <state x="242" y="0" key="CommitChangelistDialog2" timestamp="1583494680810">
+    <state x="242" y="0" key="CommitChangelistDialog2" timestamp="1583494868713">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="242" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1583494680810" />
+    <state x="242" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1583494868713" />
     <state x="420" y="101" key="FileChooserDialogImpl" timestamp="1583387013853">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -229,22 +243,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="464" y="256" width="377" height="208" key="Github.CreateGistDialog/0.0.1280.720@0.0.1280.720" timestamp="1582467149847" />
-    <state width="1235" height="128" key="GridCell.Tab.0.bottom" timestamp="1583494550676">
+    <state width="1235" height="175" key="GridCell.Tab.0.bottom" timestamp="1583510648337">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1235" height="128" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1583494550676" />
-    <state width="1235" height="128" key="GridCell.Tab.0.center" timestamp="1583494550676">
+    <state width="1235" height="175" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1583510648337" />
+    <state width="1235" height="175" key="GridCell.Tab.0.center" timestamp="1583510648337">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1235" height="128" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1583494550676" />
-    <state width="1235" height="128" key="GridCell.Tab.0.left" timestamp="1583494550676">
+    <state width="1235" height="175" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1583510648337" />
+    <state width="1235" height="175" key="GridCell.Tab.0.left" timestamp="1583510648337">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1235" height="128" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1583494550676" />
-    <state width="1235" height="128" key="GridCell.Tab.0.right" timestamp="1583494550676">
+    <state width="1235" height="175" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1583510648337" />
+    <state width="1235" height="175" key="GridCell.Tab.0.right" timestamp="1583510648337">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1235" height="128" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1583494550676" />
+    <state width="1235" height="175" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1583510648337" />
     <state width="1235" height="189" key="GridCell.Tab.1.bottom" timestamp="1583418004251">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -265,10 +279,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="123" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1582875726077" />
-    <state x="232" y="93" key="Vcs.Push.Dialog.v2" timestamp="1583494757652">
+    <state x="232" y="93" key="Vcs.Push.Dialog.v2" timestamp="1583494886566">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="232" y="93" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1583494757652" />
+    <state x="232" y="93" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1583494886566" />
     <state x="348" y="254" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582466927241">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -281,9 +295,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="27" y="0" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1582875801773" />
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1583490965555">
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1583509893236">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1583490965555" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1583509893236" />
   </component>
 </project>
