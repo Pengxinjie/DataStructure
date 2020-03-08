@@ -1,10 +1,10 @@
-package Sort;
+package sort;
 
 /**
  * @author Pengxinjie
  * @DATE 2020/3/7 - 15:05
  */
-public class selectSort {
+public class SelectSort {
     public static void main(String[] args) {
         int[] a = {2,1,5,3,6};
         Select(a);

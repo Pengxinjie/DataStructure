@@ -1,4 +1,4 @@
-package Sort;
+package sort;
 
 /**
  * @author Pengxinjie
@@ -31,7 +31,7 @@ public class QuickSort {
 //        }
         System.out.println();
         System.out.println("共耗费"+sum+"秒");
-        //Quick:0.139秒    ---> 100 0000 的数据！
+        //Quick:1.326秒    ---> 1000 0000 的数据！
     }
 
     public static void Quick_1(int[] arr, int low, int high) {
