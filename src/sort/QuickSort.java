@@ -1,5 +1,11 @@
 package sort;
 
+import jdk.swing.interop.LightweightContentWrapper;
+
+import javax.swing.text.html.HTMLWriter;
+import java.io.Serializable;
+import java.util.HashMap;
+
 /**
  * @author Pengxinjie
  * @DATE 2020/3/7 - 19:42
@@ -7,7 +13,7 @@ package sort;
 public class QuickSort {
     public static void main(String[] args) {
         int[] ar = {5, 1, 2, 3, 6, 4};
-        Quick_1(ar,0,ar.length-1);
+        quick(ar,0,ar.length-1);
         for (int i : ar) {
             System.out.print(i + " ");
         }
@@ -152,5 +158,45 @@ public class QuickSort {
         int temp = arr[low];
         arr[low] = arr[high];
         arr[high] = temp;
+    }
+
+    /** 快速排序集成
+     * @param arr 要排序的数组
+     * @param left 左边界
+     * @param right 右边界
+     */
+    public static void quick(int[] arr,int left,int right){
+        //中间轴承
+        int mid;
+
+        while (left < right){
+            //临时变量
+            int low = left;
+            int hi = right;
+            //取第一个值为中间轴承
+            int midKey = arr[low];
+            //记住中间值
+            int temp = midKey;
+            while (low < hi){
+                while (low < hi && arr[hi] >= midKey){
+                    hi--;
+                }
+                arr[low] = arr[hi];
+
+                while (low < hi && arr[low] <= midKey){
+                    low++;
+                }
+                arr[hi] = arr[low];
+            }
+            //修改中间轴承
+            mid = low;
+            //中间值回归
+            arr[mid] = temp;
+
+            //左递归
+            quick(arr,left,mid-1);
+            //尾递归
+            left = mid+1;
+        }
     }
 }

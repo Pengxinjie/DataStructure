@@ -28,7 +28,7 @@ public class ShellSort {
         double sum = (double) (end - start)/1000;
 
         for (int i : arr) {
-            //System.out.println(i);
+            System.out.println(i);
         }
         System.out.println();
         System.out.println("共耗费"+sum+"秒");
@@ -60,17 +60,14 @@ public class ShellSort {
     public static void Shell_2(int[] arr){
         for (int gap = arr.length/2; gap > 0; gap/=2) {
             //从gap元素开始，逐个对其所在的组进行直接插入排序
-            for (int i = gap; i < arr.length; i++) {
-               int insertIndex = i;
+            for (int i = gap; i < arr.length; i+=gap) {
                int insertVal = arr[i];
-               if (arr[insertIndex] < arr[insertIndex-gap]){
-                   while (insertIndex - gap >=0 && insertVal < arr[insertIndex-gap]){
-                       //移动
-                       arr[insertIndex] = arr[insertIndex - gap];
-                       insertIndex -= gap;
-                   }
-                   arr[insertIndex] = insertVal;
+               int insertIndex = i-gap;
+               while (insertIndex >= 0 && arr[insertIndex] > insertVal){
+                   arr[insertIndex+gap] = arr[insertIndex];
+                   insertIndex -= gap;
                }
+               arr[insertIndex+gap] = insertVal;
             }
         }
     }

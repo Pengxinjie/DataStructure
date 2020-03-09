@@ -21,23 +21,56 @@ public class RadixSort {
         System.out.println();
 
         long start = System.currentTimeMillis();
-        Radix(arr);
+        radix(arr);
         long end = System.currentTimeMillis();
 
         //转化成秒
         double sum = (double) (end - start)/1000;
 
-//        for (int i : arr) {
-//            System.out.println(i);
-//        }
+        for (int i : arr) {
+            System.out.println(i);
+        }
         System.out.println();
         System.out.println("共耗费"+sum+"秒");
         //Radix:0.793秒  -->1000 0000的数据
     }
 
+    public static void radix(int[] arr){
+        //先求出最大位数
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max){
+                max = arr[i];
+            }
+        }
+        int maxLength = (max + "").length();
+
+        int[][] bucket = new int[10][arr.length];
+
+        int[] bucketIndex = new int[arr.length];
+        int n = 1;
+        while (maxLength-- > 0){
+            for (int i = 0; i < arr.length; i++) {
+                int wei = arr[i] / n % 10;
+                bucket[wei][bucketIndex[wei]++] = arr[i];
+            }
+            n*=10;
+            int index = 0;
+            for (int i = 0; i < 10; i++) {
+                if (bucketIndex[i] > 0){
+                    for (int j = 0; j < bucketIndex[i]; j++) {
+                        arr[index++] = bucket[i][j];
+                    }
+                }
+                bucketIndex[i] = 0;
+            }
+        }
+    }
+
+
     public static void Radix(int[] arr) {
         //先得得到数组中最大的数的位数
-        //先找数组中最大的数
+        //先找数组中最大的数vb
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {

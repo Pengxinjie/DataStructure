@@ -1,5 +1,7 @@
 package sort;
 
+import javax.xml.stream.FactoryConfigurationError;
+
 /**
  * @author Pengxinjie
  * @DATE 2020/3/7 - 0:24
@@ -26,9 +28,9 @@ public class BubbleSort {
 
         double sum = (double) (end - start)/1000;
 
-        for (int i : arr) {
-            System.out.print(i+"  ");
-        }
+//        for (int i : arr) {
+//            System.out.print(i+"  ");
+//        }
         System.out.println();
         System.out.println("共耗费"+sum+"秒");
         //Bubble_1:17.012秒
